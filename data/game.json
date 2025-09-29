@@ -1,0 +1,15 @@
+{
+  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.game.schema.json",
+  "game": "Meteos",
+  "creator": "Konoko",
+  "filler_item_name": "Fuel",
+  "starting_items": [
+    {
+      "item_categories": [
+        "Planets"
+      ],
+      "random": 4
+    }
+  ],
+  "death_link": true
+}
