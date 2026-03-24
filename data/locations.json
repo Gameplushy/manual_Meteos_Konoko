@@ -33,7 +33,7 @@
 { "name": "Win as Suburbion", "category": ["Win"], "requires": "|Suburbion|" },
 { "name": "Win as Starrii/Stellis", "category": ["Win"], "requires": "|Starrii/Stellis|" },
 { "name": "Win as Meteo", "category": ["Win"], "requires": "|Meteo|" },
-{ "name": "Win vs 3 Meteos", "category": ["Win"], "requires": "|@Planets:all| AND |@Boss Shard:all|", "victory": true}
+{ "name": "Win vs 3 Meteos", "category": ["Win"], "requires": "|@Planets:2| AND |Meteo| AND |@Boss Shard:all|", "victory": true}
 ]
 }
 
