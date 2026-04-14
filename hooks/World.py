@@ -17,6 +17,7 @@ from ..Helpers import is_option_enabled, get_option_value, format_state_prog_ite
 
 # calling logging.info("message") anywhere below in this file will output the message to both console and log file
 import logging
+import random
 
 ########################################################################################
 ## Order of method calls when the world generates:
