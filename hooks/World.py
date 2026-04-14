@@ -17,7 +17,6 @@ from ..Helpers import is_option_enabled, get_option_value, format_state_prog_ite
 
 # calling logging.info("message") anywhere below in this file will output the message to both console and log file
 import logging
-import random
 
 ########################################################################################
 ## Order of method calls when the world generates:
@@ -57,7 +56,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     # Add your code here to calculate which locations to remove
     for region in multiworld.regions:
         if region.player == player and not hasattr(world.multiworld, "generation_is_fake"):
-            selected_spelocations = random.sample(spelocations, len(spelocations)-20)
+            selected_spelocations = world.random.sample(spelocations, len(spelocations)-20)
             for location in list(region.locations):
                 if location.name in selected_spelocations:
                     region.locations.remove(location)
